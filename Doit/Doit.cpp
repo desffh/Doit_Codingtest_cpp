@@ -1,6 +1,8 @@
 ﻿#include <iostream>
 #include <algorithm>
-#include <deque>
+#include <vector>
+#include <stack>
+
 using namespace std;
 
 int main()

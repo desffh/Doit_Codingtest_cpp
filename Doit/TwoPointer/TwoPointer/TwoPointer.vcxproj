@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{8fa3f989-e42a-4405-935b-fc8823c6d58b}</ProjectGuid>
-    <RootNamespace>DataStructure</RootNamespace>
+    <ProjectGuid>{3e023db7-75a2-4b26-a2db-c5dc862a7f85}</ProjectGuid>
+    <RootNamespace>TwoPointer</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,12 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="구간합1.cpp" />
-    <ClCompile Include="구간합2.cpp" />
-    <ClCompile Include="나머지 합.cpp" />
-    <ClCompile Include="숫자의 합.cpp" />
+    <ClCompile Include="..\..\Data_Structure\DNA 비밀번호.cpp" />
+    <ClCompile Include="..\..\Data_Structure\연속된 자연수의 합.cpp" />
+    <ClCompile Include="..\..\Data_Structure\좋은수 구하기.cpp" />
+    <ClCompile Include="..\..\Data_Structure\주몽의 명령.cpp" />
+    <ClCompile Include="..\..\Data_Structure\최솟값 찾기1.cpp" />
     <ClCompile Include="-----.cpp" />
-    <ClCompile Include="평균.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{8fa3f989-e42a-4405-935b-fc8823c6d58b}</ProjectGuid>
-    <RootNamespace>DataStructure</RootNamespace>
+    <ProjectGuid>{d45e026f-c0f4-47da-aa46-8f7da87a4c8f}</ProjectGuid>
+    <RootNamespace>StackQueue</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,12 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="구간합1.cpp" />
-    <ClCompile Include="구간합2.cpp" />
-    <ClCompile Include="나머지 합.cpp" />
-    <ClCompile Include="숫자의 합.cpp" />
     <ClCompile Include="-----.cpp" />
-    <ClCompile Include="평균.cpp" />
+    <ClCompile Include="스택 수열.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

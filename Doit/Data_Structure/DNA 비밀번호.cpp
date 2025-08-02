@@ -6,127 +6,145 @@ using namespace std;
 /// 슬라이딩 윈도우 - DNA 비밀번호
 /// </summary>
 
-int checkArr[4]; // 각 문자의 최소 요구 개수 배열
-int myArr[4];    // 현재 상태 배열
-int checkSecret = 0; // 최소 요구 수치 확인용
+int checkarr[4]; // 체크 배열 (A C G T)
+int myarr[4];    // 상태 배열 (A C G T)
+int checkcount = 0; // 부분 문자열의 최소갯수를 만족하는 지 확인하는 변수
 
-void Add(char& c) // 부분 문자열 추가 (A C G T)
+// 문자열 추가하기
+void Add(char& a)
 {
-    switch (c)
-    {
-    case 'A':
-        myArr[0]++; // 들어온 문자열 카운팅 & 최소 요구 개수와 같다면 checkSecret++
-        if (myArr[0] == checkArr[0])
-        {
-            checkSecret++;
-        }
-        break;
-
-    case 'C':
-        myArr[1]++;
-        if (myArr[1] == checkArr[1])
-        {
-            checkSecret++;
-        }
-        break;
-
-    case 'G':
-        myArr[2]++;
-        if (myArr[2] == checkArr[2])
-        {
-            checkSecret++;
-        }
-        break;
-
-    case 'T':
-        myArr[3]++;
-        if (myArr[3] == checkArr[3])
-        {
-            checkSecret++;
-        }
-        break;
-    }
+	switch (a)
+	{
+	case 'A': // 들어온 문자열 카운팅 & 최소 요구 개수와 같다면 checkcount++
+		myarr[0]++;
+		if (myarr[0] == checkarr[0])
+		{
+			checkcount++;
+		}
+		break;
+	case 'C':
+		myarr[1]++;
+		if (myarr[1] == checkarr[1])
+		{
+			checkcount++;
+		}
+		break;
+	case 'G':
+		myarr[2]++;
+		if (myarr[2] == checkarr[2])
+		{
+			checkcount++;
+		}
+		break;
+	case 'T':
+		myarr[3]++;
+		if (myarr[3] == checkarr[3])
+		{
+			checkcount++;
+		}
+		break;
+	}
 }
 
-void Remove(char& c) // 부분 문자열 제거 (A C G T)
+// 문자열 제거하기
+void Remove(char& a)
 {
-    switch (c)
-    {
-    case 'A': // 최소 요구 개수와 같다면 checkSecret-- & 들어온 문자열 카운팅 감소
-        if (myArr[0] == checkArr[0])
-        {
-            checkSecret--;
-        }
-        myArr[0]--;
-        break;
-
-    case 'C':
-        if (myArr[1] == checkArr[1])
-        {
-            checkSecret--;
-        }
-        myArr[1]--;
-        break;
-
-    case 'G':
-        if (myArr[2] == checkArr[2])
-        {
-            checkSecret--;
-        }
-        myArr[2]--;
-        break;
-
-    case 'T':
-        if (myArr[3] == checkArr[3])
-        {
-            checkSecret--;
-        }
-        myArr[3]--;
-        break;
-    }
+	switch (a)
+	{
+	case 'A':
+		if (myarr[0] == checkarr[0])
+		{
+			checkcount--;
+		}
+		myarr[0]--;
+		break;
+	case 'C':
+		if (myarr[1] == checkarr[1])
+		{
+			checkcount--;
+		}
+		myarr[1]--;
+		break;
+	case 'G':
+		if (myarr[2] == checkarr[2])
+		{
+			checkcount--;
+		}
+		myarr[2]--;
+		break;
+	case 'T':
+		if (myarr[3] == checkarr[3])
+		{
+			checkcount--;
+		}
+		myarr[3]--;
+		break;
+	}
 }
 
 
 int main()
 {
-    ios::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+	// 제한 시간 2초 = 2 x 10^8
+	// 문자열과 부분 문자열 길이 최대 10^6
+	// [최종 시간 복잡도 -> O(N) 이하로 가능
 
+	// [슬라이딩 윈도우]
+	// - 부분 문자열이 이동할 때 마다 앞에 원소는 제거하고 뒤의 원소는 추가해야함.
+	// - 유효한 비밀번호를 검사할 때 기존 검사 결과에 새로 들어온 문자열
+	// 제거되는 문자열만 반영하여 확인하는 것이 핵심이다.
 
-    int S; int P; // 문자열 & 부분 문자열 크기
-    string A;     // 문자열 데이터
-    int Result = 0;   // 결과값
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
 
-    cin >> S >> P >> A;
+	int S = 0;
+	int P = 0;
+	string A; // 입력받은 문자열
+	int Result = 0;
 
-    for (int i = 0; i < 4; i++)
-    {
-        cin >> checkArr[i];
+	cin >> S >> P >> A;
 
-        if (checkArr[i] == 0) // 최소 요구 개수가 0이라면 
-        {
-            checkSecret++;
-        }
-    }
+	// 체크 배열 입력받기
+	for (int i = 0; i < 4; i++)
+	{
+		cin >> checkarr[i];
 
-    // 초기 부분 문자열을 하나씩 추가
-    for (int i = 0; i < P; i++) Add(A[i]);
+		if (checkarr[i] == 0)
+		{
+			checkcount++;
+		}
+	}
 
-    // 슬라이딩 윈도우 시작
-    for (int i = P; i < S; i++)
-    {
-        int j = i - P; // 제거 할 인덱스
-        Remove(A[j]);
-        Add(A[i]);
+	// 초기 P배열 저장
+	for (int i = 0; i < P; i++)
+	{
+		// 문자열의 P배열 크기만큼 myarr에 추가
+		Add(A[i]);
+	}
 
-        if (checkSecret == 4)
-        {
-            Result++;
-        }
-    }
+	// 최소 갯수를 만족한다면 -> 4는 A C G T 각각을 의미
+	if (checkcount == 4)
+	{
+		Result++;
+	}
 
-    cout << Result << "\n";
+	// 슬라이딩 윈도우
+	for (int i = P; i < S; i++)
+	{
+		int add = i;
+		int remove = i - P;
+
+		Add(A[add]);
+		Remove(A[remove]);
+
+		if (checkcount == 4)
+		{
+			Result++;
+		}
+	}
+
+	cout << Result << '\n';
 }
 
 

@@ -21,7 +21,7 @@ int main()
 
 	// 사이즈 N, 0으로 초기화 
 	vector<long> S(N, 0);  // 합 배열
-	vector<long> C(N, 0);  // 나머지 배열
+	vector<long> C(M, 0);  // 나머지 배열
 
 	long answer = 0;
 

@@ -3,7 +3,7 @@
 #include <deque>
 using namespace std;
 
-typedef pair<int, int> Node; // 노드 쌍
+typedef pair<int, int> Node; // <숫자, 인덱스>
 
 /// <summary>
 /// 슬라이딩 윈도우 - 최솟값 찾기 1
@@ -11,35 +11,43 @@ typedef pair<int, int> Node; // 노드 쌍
 
 int main()
 {
+	// 제한 시간 2.4초 -> 2.4 x 10^8
+
+	// N의 최대가 5 x 10^6 이라서 최대 O(N)밖에 사용할 수 없다.
+	// -> 정렬(NlogN)을 사용할 수 없는 것.
+	// -> deque을 사용하여 정렬을 구현할 수 있다.
+
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
 	cout.tie(NULL);
 
-	deque <Node> mydeque; // 현재 수와 인덱스 저장
-	int N; int L;         // 데이터 개수, 최솟값을 구하는 범위
+	int N = 0;
+	int L = 0;
 
 	cin >> N >> L;
 
+	deque <Node> mydeque;
+
 	for (int i = 0; i < N; i++)
 	{
-		int now; // 현재 입력받은 값
-		cin >> now;
+		int temp;
+		cin >> temp;
 
-		// 현재 들어온 값보다 뒤의 값들이 크다면
-		while (mydeque.size() && mydeque.back().first > now)
+		// 현재 들어온 값 보다 마지막 값이 더 크다면 제거
+		while (mydeque.size() && mydeque.back().first > temp)
 		{
-			mydeque.pop_back(); // 제거
+			mydeque.pop_back();
 		}
 
-		mydeque.push_back(Node(now, i)); // 숫자 & 인덱스
+		mydeque.push_back(Node(temp, i));
 
-		// 맨 처음 인덱스 값이 i - L보다 작거나 같다면 (윈도우 범위 초과)
-		if (mydeque.front().second <= i - L)
+		// 윈도우의 범위를 벗어난다면
+		if (mydeque.back().second - L >= mydeque.front().second)
 		{
 			mydeque.pop_front();
 		}
 
-		// 가장 첫번째 숫자 출력
+		// 최소값 출력
 		cout << mydeque.front().first << " ";
 	}
 }

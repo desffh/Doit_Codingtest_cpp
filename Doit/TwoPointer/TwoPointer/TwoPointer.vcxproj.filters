@@ -18,19 +18,19 @@
     <ClCompile Include="-----.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="숫자의 합.cpp">
+    <ClCompile Include="..\..\Data_Structure\연속된 자연수의 합.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="평균.cpp">
+    <ClCompile Include="..\..\Data_Structure\주몽의 명령.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="구간합1.cpp">
+    <ClCompile Include="..\..\Data_Structure\좋은수 구하기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="구간합2.cpp">
+    <ClCompile Include="..\..\Data_Structure\DNA 비밀번호.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="나머지 합.cpp">
+    <ClCompile Include="..\..\Data_Structure\최솟값 찾기1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
