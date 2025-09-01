@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{3e023db7-75a2-4b26-a2db-c5dc862a7f85}</ProjectGuid>
-    <RootNamespace>TwoPointer</RootNamespace>
+    <ProjectGuid>{62312238-831a-4e0f-903b-3f4979f380dd}</ProjectGuid>
+    <RootNamespace>Sort</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,12 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Data_Structure\DNA 비밀번호.cpp" />
-    <ClCompile Include="..\..\Data_Structure\연속된 자연수의 합.cpp" />
-    <ClCompile Include="..\..\Data_Structure\좋은수 구하기.cpp" />
-    <ClCompile Include="..\..\Data_Structure\주몽의 명령.cpp" />
-    <ClCompile Include="..\..\Data_Structure\최솟값 찾기1.cpp" />
-    <ClCompile Include="-----.cpp" />
+    <ClCompile Include="ATM 인출 시간 계산.cpp" />
+    <ClCompile Include="K번째 수.cpp" />
+    <ClCompile Include="Sort.cpp" />
+    <ClCompile Include="내림차순 자릿수 정렬.cpp" />
+    <ClCompile Include="버블 정렬 프로그램1.cpp" />
+    <ClCompile Include="버블 정렬 프로그램2.cpp" />
+    <ClCompile Include="버블_수 정렬1.cpp" />
+    <ClCompile Include="수 정렬하기2.cpp" />
+    <ClCompile Include="수 정렬하기3.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

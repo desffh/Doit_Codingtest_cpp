@@ -15,22 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="-----.cpp">
+    <ClCompile Include="Two_Pointer.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Data_Structure\연속된 자연수의 합.cpp">
+    <ClCompile Include="DNA비밀번호.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Data_Structure\주몽의 명령.cpp">
+    <ClCompile Include="연속된 수의 합.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Data_Structure\좋은수 구하기.cpp">
+    <ClCompile Include="좋은 수.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Data_Structure\DNA 비밀번호.cpp">
+    <ClCompile Include="주몽.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Data_Structure\최솟값 찾기1.cpp">
+    <ClCompile Include="최솟값 찾기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
