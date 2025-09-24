@@ -55,3 +55,18 @@
 <br>
 
 ### 🔹 탐색
+| 번호 | 문제 이름 | 문제번호 | 탐색 종류 | 링크 |
+| --- | --- | --- | --- | --- |
+| 023 | 연결 요소의 개수 구하기 | 11724 | DFS (깊이우선탐색) | [11724](https://www.acmicpc.net/problem/2750) |
+| 024 | 신기한 소수 찾기 | 2023 | DFS | [2023](https://www.acmicpc.net/problem/2023) |
+| 025 | 친구 관계 파악하기 | 13023 | DFS | [13023](https://www.acmicpc.net/problem/13023) |
+| 026 | **DFS와 BFS 프로그램** | 1260 | DFS / BFS |[1260](https://www.acmicpc.net/problem/1260) |
+| 027 | 미로 탐색하기 | 2178 | BFS (너비우선탐색) | [2178](https://www.acmicpc.net/problem/2178) |
+| 028 | 트리의 지름 구하기 | 1167 | BFS | [1167](https://www.acmicpc.net/problem/1167) |
+| 029 | 원하는 정수 찾기 | 1920 | 이진 탐색 | [1920](https://www.acmicpc.net/problem/1920) |
+| 030 | 블루레이 만들기 | 2343 | 이진 탐색 | [2343](https://www.acmicpc.net/problem/2343) |
+| 031 | 배열에서 K번째 수 찾기 | 1300 | 이진 탐색 | [1300](https://www.acmicpc.net/problem/1300) |
+
+<br>
+
+
