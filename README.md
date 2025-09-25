@@ -69,4 +69,14 @@
 
 <br>
 
+### 🔹 그리디 알고리즘
+| 번호 | 문제 이름 | 문제번호 | 링크 |
+| --- | --- | --- | --- |
+| 032 | 동전 개수의 최솟값 구하기 | 11047 |  [11047](https://www.acmicpc.net/problem/11047) |
+| 033 | 카드 정렬하기 | 1715 | [1715](https://www.acmicpc.net/problem/1715) |
+| 034 | 수를 묶어서 최댓값 만들기 | 1744 |  [1744](https://www.acmicpc.net/problem/1744) |
+| 035 | 회의실 배정하기 | 1931 | [1931](https://www.acmicpc.net/problem/1931) |
+| 036 | 최솟값을 만드는 괄호 배치 찾기 | 1541 | [1541](https://www.acmicpc.net/problem/1541) |
+
+<br>
 
