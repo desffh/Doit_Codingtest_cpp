@@ -80,3 +80,19 @@
 
 <br>
 
+### 🔹 정수론
+| 번호 | 문제 이름 | 문제번호 | 종류 | 링크 |
+| --- | --- | --- | --- | --- |
+| 037 | 소수 구하기 | 1929 | 소수 | [1929](https://www.acmicpc.net/problem/1929) |
+| 038 | 거의 소수 구하기 | 1456 | 소수 | [1456](https://www.acmicpc.net/problem/1456) |
+| 039 | 소수 & 팰린드롬 | 1747 | 소수 | [1747](https://www.acmicpc.net/problem/1747) |
+| 040 | 제곱이 아닌 수 찾기 | 1016 | 소수 |[1016](https://www.acmicpc.net/problem/1016) |
+| 041 | 오일러 피 함수 구현 | 11689 | 오일러 피 | [11689](https://www.acmicpc.net/problem/11689) |
+| 042 | 최소 공배수 구하기 | 1934 | 유클리드 호제법 | [1934](https://www.acmicpc.net/problem/1934) |
+| 043 | 최대 공약수 구하기 | 1850 | 유클리드 호제법 | [1850](https://www.acmicpc.net/problem/1850) |
+| 044 | 칵테일 만들기 | 1033 | 유클리드 호제법 | [1033](https://www.acmicpc.net/problem/1033) |
+| 045 | Ax + By = C | 21568 |확장_유클리드 호제법| [21568](https://www.acmicpc.net/problem/21568) |
+
+<br>
+
+
