@@ -2,8 +2,8 @@
 #include <algorithm>
 #include <vector>
 #include <string>
-#include <queue>
-#include <sstream>
+#include <cmath>
+
 
 using namespace std;
 
@@ -14,7 +14,7 @@ int main()
 	cout.tie(NULL);
 
 	/*
-		
-	*/
 
+	*/
+	
 }

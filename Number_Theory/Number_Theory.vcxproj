@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7e73a726-34aa-41b0-a2c6-5822fcc2f975}</ProjectGuid>
+    <ProjectGuid>{d18b6eba-8648-494d-9740-93480c9f8adb}</ProjectGuid>
     <RootNamespace>NumberTheory</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -127,10 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Number Theory.cpp" />
+    <ClCompile Include="Number_Theory.cpp" />
     <ClCompile Include="거의 소수.cpp" />
     <ClCompile Include="소수 구하기.cpp" />
     <ClCompile Include="소수&amp;팰린드롬.cpp" />
+    <ClCompile Include="오일러 피.cpp" />
+    <ClCompile Include="제곱수 아닌수.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
