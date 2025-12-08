@@ -133,6 +133,9 @@
     <ClCompile Include="소수&amp;팰린드롬.cpp" />
     <ClCompile Include="오일러 피.cpp" />
     <ClCompile Include="제곱수 아닌수.cpp" />
+    <ClCompile Include="최대공약수.cpp" />
+    <ClCompile Include="최소공배수.cpp" />
+    <ClCompile Include="칵테일.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

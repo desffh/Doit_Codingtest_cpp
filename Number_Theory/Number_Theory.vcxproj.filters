@@ -33,5 +33,14 @@
     <ClCompile Include="오일러 피.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="최소공배수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="최대공약수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="칵테일.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
