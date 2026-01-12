@@ -3,6 +3,7 @@
 #include <vector>
 #include <queue>
 #include <string>
+#include <stack>
 #include <cmath>
 #include <cstring>
 
@@ -15,12 +16,10 @@ int main()
 	cout.tie(NULL);
 
 	/*
-
+		
 	*/
-	
 
 }
-
 
 
 
