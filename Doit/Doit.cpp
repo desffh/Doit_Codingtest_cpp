@@ -1,14 +1,10 @@
 ﻿#include <iostream>
 #include <algorithm>
 #include <vector>
-#include <queue>
-#include <string>
 #include <stack>
-#include <cmath>
-#include <cstring>
+#include <queue>
 
 using namespace std;
-
 
 int main()
 {
@@ -17,9 +13,9 @@ int main()
 	cout.tie(NULL);
 
 	/*
-		
-	*/
-}
 
+
+ 	*/
+}
 
 
